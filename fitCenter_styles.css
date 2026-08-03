@@ -1,0 +1,401 @@
+/* ===========================
+   FitCenter - Estilos generales
+=========================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #FFFFFF;
+  color: #1B2340;
+}
+
+.destacado {
+  color: #1FAA69;
+}
+
+/* ===========================
+   Header
+=========================== */
+
+.encabezado {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 24px 6%;
+}
+
+.encabezado__logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.encabezado__icono {
+  font-size: 1.4rem;
+}
+
+.encabezado__nav {
+  display: flex;
+  gap: 32px;
+}
+
+.encabezado__nav a {
+  text-decoration: none;
+  color: #1B2340;
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.encabezado__nav a:hover {
+  color: #1FAA69;
+}
+
+.encabezado__cta {
+  text-decoration: none;
+  color: #A9AFBC;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+/* ===========================
+   Hero
+=========================== */
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+  padding: 60px 6% 100px 6%;
+}
+
+.hero__texto {
+  flex: 1;
+  max-width: 560px;
+}
+
+.hero__titulo {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.25;
+  margin-bottom: 24px;
+}
+
+.hero__descripcion {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #5B6270;
+  margin-bottom: 32px;
+}
+
+.hero__botones {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.boton {
+  padding: 13px 26px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.boton--primario {
+  background-color: #FFFFFF;
+  color: #1FAA69;
+  border: 2px solid #1FAA69;
+}
+
+.boton--primario:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(31, 170, 105, 0.2);
+}
+
+.boton--secundario {
+  background-color: transparent;
+  color: #A9AFBC;
+  border: 2px solid transparent;
+  padding: 13px 0;
+}
+
+.boton--secundario:hover {
+  color: #1B2340;
+}
+
+/* ===========================
+   Tarjeta hero (entrenamiento)
+=========================== */
+
+.tarjeta-hero {
+  flex: 1;
+  max-width: 340px;
+  background-color: #FFFFFF;
+  border-radius: 28px;
+  box-shadow: 0 30px 50px rgba(27, 35, 64, 0.12);
+  padding: 48px 32px;
+  text-align: center;
+}
+
+.tarjeta-hero__icono {
+  font-size: 3.2rem;
+  margin-bottom: 20px;
+}
+
+.tarjeta-hero h3 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+}
+
+.tarjeta-hero p {
+  font-size: 0.95rem;
+  color: #5B6270;
+  line-height: 1.5;
+}
+
+/* ===========================
+   Sección de precios
+=========================== */
+
+.precios {
+  text-align: center;
+  padding: 40px 6% 80px 6%;
+}
+
+.precios__titulo {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.precios__subtitulo {
+  color: #5B6270;
+  font-size: 0.95rem;
+  margin-bottom: 48px;
+}
+
+.precios__contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
+/* ===========================
+   Tarjeta de plan
+=========================== */
+
+.plan {
+  background-color: #FFFFFF;
+  width: 280px;
+  padding: 40px 28px;
+  border: 1px solid #E7EAF0;
+  border-radius: 18px;
+  box-shadow: 0 12px 24px rgba(27, 35, 64, 0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  position: relative;
+}
+
+.plan:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 32px rgba(27, 35, 64, 0.12);
+}
+
+.plan--recomendado {
+  border: 2px solid #1FAA69;
+}
+
+.plan__etiqueta {
+  display: block;
+  color: #A9AFBC;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin-bottom: 12px;
+}
+
+.plan__nombre {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+}
+
+.plan__precio {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #1FAA69;
+  margin-bottom: 24px;
+}
+
+.plan__precio span {
+  font-size: 0.9rem;
+  color: #A9AFBC;
+  font-weight: 400;
+}
+
+.plan__beneficios {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 32px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #4B5163;
+  font-size: 0.92rem;
+}
+
+.plan__boton {
+  text-decoration: none;
+  color: #A9AFBC;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.plan--recomendado .plan__boton {
+  color: #1FAA69;
+}
+
+.plan__boton:hover {
+  color: #1B2340;
+}
+
+/* ===========================
+   Banner final
+=========================== */
+
+.banner {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  background-color: #FFFFFF;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(27, 35, 64, 0.08);
+  padding: 36px 44px;
+  margin: 0 6% 60px 6%;
+}
+
+.banner__icono {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.banner__texto {
+  flex: 1;
+}
+
+.banner__texto h3 {
+  margin: 0 0 6px 0;
+  font-size: 1.3rem;
+  color: #A9AFBC;
+}
+
+.banner__texto p {
+  margin: 0;
+  color: #8C93A3;
+  font-size: 0.92rem;
+}
+
+.banner__enlace {
+  color: #1FAA69;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.banner__enlace:hover {
+  text-decoration: underline;
+}
+
+/* ===========================
+   Footer
+=========================== */
+
+.pie-pagina {
+  text-align: center;
+  padding: 24px 6% 48px 6%;
+}
+
+.pie-pagina p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #A9AFBC;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width: 768px) {
+
+  .encabezado {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+
+  .encabezado__nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 40px 6% 60px 6%;
+    text-align: center;
+  }
+
+  .hero__titulo {
+    font-size: 2.1rem;
+  }
+
+  .hero__botones {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .boton--secundario {
+    padding: 13px 0;
+  }
+
+  .tarjeta-hero {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .precios {
+    padding: 32px 6% 48px 6%;
+  }
+
+  .precios__titulo {
+    font-size: 1.6rem;
+  }
+
+  .precios__contenedor {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .plan {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 28px 24px;
+  }
+
+}

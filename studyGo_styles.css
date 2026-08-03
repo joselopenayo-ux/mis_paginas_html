@@ -1,0 +1,296 @@
+/* ===========================
+   StudyGo - Estilos generales
+=========================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #FFFFFF;
+  color: #1B2340;
+}
+
+.destacado {
+  color: #2F5FFF;
+}
+
+/* ===========================
+   Header
+=========================== */
+
+.encabezado {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 24px 6%;
+}
+
+.encabezado__logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.encabezado__icono {
+  font-size: 1.4rem;
+}
+
+.encabezado__nav {
+  display: flex;
+  gap: 32px;
+}
+
+.encabezado__nav a {
+  text-decoration: none;
+  color: #1B2340;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.encabezado__nav a:hover {
+  color: #2F5FFF;
+}
+
+.encabezado__cta {
+  text-decoration: none;
+  color: #9CA3AF;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+/* ===========================
+   Sección portada
+=========================== */
+
+.portada {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+  padding: 40px 6% 100px 6%;
+}
+
+.portada__texto {
+  flex: 1;
+  max-width: 560px;
+}
+
+.portada__titulo {
+  font-size: 2.8rem;
+  font-weight: 800;
+  line-height: 1.25;
+  margin-bottom: 20px;
+}
+
+.portada__descripcion {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #5B6270;
+  margin-bottom: 32px;
+}
+
+/* Botones */
+
+.portada__botones {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.boton {
+  padding: 13px 26px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.boton--primario {
+  background-color: #FFFFFF;
+  color: #2F5FFF;
+  border: 2px solid #2F5FFF;
+}
+
+.boton--primario:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(47, 95, 255, 0.2);
+}
+
+.boton--secundario {
+  background-color: transparent;
+  color: #9CA3AF;
+  border: 2px solid transparent;
+}
+
+.boton--secundario:hover {
+  color: #1B2340;
+}
+
+/* Etiquetas */
+
+.portada__etiquetas {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.etiqueta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #FFFFFF;
+  color: #1B2340;
+  padding: 8px 16px 8px 8px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  box-shadow: 0 4px 14px rgba(27, 35, 64, 0.08);
+}
+
+.etiqueta__icono {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  font-size: 0.85rem;
+}
+
+.etiqueta__icono--verde {
+  background-color: #DFF6E6;
+}
+
+.etiqueta__icono--naranja {
+  background-color: #FFE9D9;
+}
+
+.etiqueta__icono--azul {
+  background-color: #E1E9FF;
+}
+
+/* ===========================
+   Mockup de celular
+=========================== */
+
+.mockup-celular {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.mockup-celular__pantalla {
+  width: 260px;
+  background-color: #FFFFFF;
+  border: 10px solid #1B2340;
+  border-radius: 40px;
+  padding: 32px 24px;
+  box-shadow: 0 30px 50px rgba(27, 35, 64, 0.18);
+  text-align: center;
+}
+
+.mockup-celular__marca {
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.mockup-celular__icono {
+  font-size: 2.6rem;
+  margin-bottom: 16px;
+}
+
+.mockup-celular__titulo {
+  font-size: 1.1rem;
+  margin-bottom: 18px;
+}
+
+.mockup-celular__lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+}
+
+.mockup-celular__lista li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.mockup-celular__hora {
+  color: #2F5FFF;
+  font-weight: 700;
+}
+
+/* ===========================
+   Footer
+=========================== */
+
+.pie-pagina {
+  text-align: center;
+  padding: 24px 6%;
+  border-top: 1px solid #EEF0F4;
+}
+
+.pie-pagina p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #9CA3AF;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width: 768px) {
+
+  .encabezado {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+
+  .encabezado__nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .portada {
+    flex-direction: column;
+    padding: 32px 6% 60px 6%;
+    text-align: center;
+  }
+
+  .portada__titulo {
+    font-size: 2rem;
+  }
+
+  .portada__botones {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .portada__etiquetas {
+    justify-content: center;
+  }
+
+  .mockup-celular__pantalla {
+    width: 220px;
+  }
+
+}

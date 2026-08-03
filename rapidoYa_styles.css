@@ -1,0 +1,273 @@
+/* ===========================
+   RápidoYa - Estilos generales
+=========================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #FFFFFF;
+  color: #2E2A28;
+}
+
+.destacado {
+  color: #E4572E;
+}
+
+/* ===========================
+   Header
+=========================== */
+
+.encabezado {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 24px 6%;
+}
+
+.encabezado__logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.encabezado__icono {
+  font-size: 1.4rem;
+}
+
+.encabezado__nav {
+  display: flex;
+  gap: 32px;
+}
+
+.encabezado__nav a {
+  text-decoration: none;
+  color: #2E2A28;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.encabezado__nav a:hover {
+  color: #E4572E;
+}
+
+.encabezado__cta {
+  text-decoration: none;
+  color: #B0A9A5;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+/* ===========================
+   Sección cómo funciona
+=========================== */
+
+.funciona {
+  text-align: center;
+  padding: 40px 6% 72px 6%;
+}
+
+.funciona__titulo {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.funciona__subtitulo {
+  color: #6B615C;
+  font-size: 0.95rem;
+  margin-bottom: 48px;
+}
+
+.funciona__contenedor {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* ===========================
+   Tarjeta de paso
+=========================== */
+
+.paso {
+  background-color: #FFFFFF;
+  width: 240px;
+  padding: 36px 20px 28px 20px;
+  border-radius: 16px;
+  box-shadow: 0 12px 24px rgba(46, 42, 40, 0.1);
+  position: relative;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.paso:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 30px rgba(46, 42, 40, 0.16);
+}
+
+.paso__numero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: #E4572E;
+  color: #FFFFFF;
+  font-weight: 700;
+  margin: 0 auto 16px auto;
+}
+
+.paso__icono {
+  font-size: 2.6rem;
+  margin-bottom: 16px;
+}
+
+.paso h3 {
+  font-size: 1.15rem;
+  margin-bottom: 10px;
+  color: #2E2A28;
+}
+
+.paso p {
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: #6B615C;
+}
+
+/* Flechas entre pasos (solo escritorio) */
+
+.flecha {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  color: #E4572E;
+}
+
+/* ===========================
+   Banner final
+=========================== */
+
+.banner {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  background-color: #FFF7F3;
+  border: 1px solid #FBE2D6;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(228, 87, 46, 0.08);
+  padding: 32px 40px;
+  margin: 0 6% 60px 6%;
+}
+
+.banner__icono {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #FFE3D4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.banner__texto {
+  flex: 1;
+}
+
+.banner__texto h3 {
+  margin: 0 0 6px 0;
+  font-size: 1.2rem;
+  color: #2E2A28;
+}
+
+.banner__texto p {
+  margin: 0;
+  color: #8A7C74;
+  font-size: 0.9rem;
+}
+
+.banner__enlace {
+  color: #E4572E;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.banner__enlace:hover {
+  text-decoration: underline;
+}
+
+/* ===========================
+   Footer
+=========================== */
+
+.pie-pagina {
+  text-align: center;
+  padding: 24px 6% 48px 6%;
+}
+
+.pie-pagina p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #B0A9A5;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width: 768px) {
+
+  .encabezado {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+
+  .encabezado__nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .funciona {
+    padding: 32px 6% 48px 6%;
+  }
+
+  .funciona__titulo {
+    font-size: 1.7rem;
+  }
+
+  .funciona__contenedor {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .paso {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .flecha {
+    transform: rotate(90deg);
+    font-size: 1.5rem;
+  }
+
+  .banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 28px 24px;
+  }
+
+}
