@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mis Proyectos</title>
+<style>
+  :root {
+    --bg: #16181d;
+    --panel: #1d2027;
+    --line: #2a2e37;
+    --text: #eef0f3;
+    --muted: #8b90a0;
+
+    --cafe: #b8763e;
+    --eco: #5a9a5f;
+    --fit: #d9524a;
+    --rapido: #d9a520;
+    --study: #4f7fd9;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    padding: 64px 24px 32px;
+    text-align: center;
+  }
+
+  .eyebrow {
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: var(--muted);
+    margin: 0 0 14px;
+  }
+
+  h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 400;
+    font-size: clamp(32px, 5vw, 48px);
+    margin: 0 0 12px;
+    letter-spacing: -0.01em;
+  }
+
+  header p {
+    color: var(--muted);
+    margin: 0;
+    font-size: 15px;
+  }
+
+  main {
+    flex: 1;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 8px 24px 64px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 18px;
+  }
+
+  .card {
+    position: relative;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 26px 22px 22px;
+    text-decoration: none;
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: hidden;
+    transition: transform 0.15s ease, border-color 0.15s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent);
+  }
+
+  .card::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--accent);
+  }
+
+  .card .tag {
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  .card h2 {
+    margin: 0;
+    font-size: 21px;
+    font-weight: 600;
+  }
+
+  .card p {
+    margin: 0;
+    font-size: 13.5px;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+
+  .card .go {
+    margin-top: 8px;
+    font-size: 13px;
+    color: var(--accent);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .card .go svg { transition: transform 0.15s ease; }
+  .card:hover .go svg { transform: translateX(3px); }
+
+  #cafeAurora { --accent: var(--cafe); }
+  #ecoMarket  { --accent: var(--eco); }
+  #fitCenter  { --accent: var(--fit); }
+  #rapidoYa   { --accent: var(--rapido); }
+  #studyGo    { --accent: var(--study); }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: var(--muted);
+    border-top: 1px solid var(--line);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <p class="eyebrow">Directorio de proyectos</p>
+  <h1>Mis Proyectos</h1>
+  <p>Cinco sitios, cinco propósitos distintos. Elige uno para entrar.</p>
+</header>
+
+<main>
+
+  <a class="card" id="cafeAurora" href="cafeAurora/">
+    <span class="tag">Café</span>
+    <h2>Café Aurora</h2>
+    <p>Sitio de presentación para una cafetería: menú, servicios y ambiente.</p>
+    <span class="go">Visitar sitio
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </span>
+  </a>
+
+  <a class="card" id="ecoMarket" href="ecoMarket/">
+    <span class="tag">Tienda</span>
+    <h2>EcoMarket</h2>
+    <p>Landing de un mercado de productos ecológicos y sostenibles.</p>
+    <span class="go">Visitar sitio
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </span>
+  </a>
+
+  <a class="card" id="fitCenter" href="fitCenter/">
+    <span class="tag">Fitness</span>
+    <h2>FitCenter</h2>
+    <p>Página de un gimnasio con clases, planes y horarios.</p>
+    <span class="go">Visitar sitio
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </span>
+  </a>
+
+  <a class="card" id="rapidoYa" href="rapidoYa/">
+    <span class="tag">Delivery</span>
+    <h2>RápidoYa</h2>
+    <p>Servicio de entregas y mensajería exprés a domicilio.</p>
+    <span class="go">Visitar sitio
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </span>
+  </a>
+
+  <a class="card" id="studyGo" href="studyGo/">
+    <span class="tag">Educación</span>
+    <h2>StudyGo</h2>
+    <p>Plataforma de cursos y recursos de estudio en línea.</p>
+    <span class="go">Visitar sitio
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </span>
+  </a>
+
+</main>
+
+<footer>
+  mis_paginas_html &middot; alojado con GitHub Pages
+</footer>
+
+</body>
+</html>
